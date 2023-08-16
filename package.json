@@ -12,7 +12,8 @@
         "test": "jest src",
         "test:watch": "jest src --watchAll",
         "type-check": "tsc --noEmit",
-        "type-check-and-lint": "yarn type-check && yarn lint"
+        "type-check-and-lint": "yarn type-check && yarn lint",
+        "start": "yarn ts-node src/main.ts"
     },
     "devDependencies": {
         "@types/jest": "^29.5.1",
@@ -26,5 +27,9 @@
         "ts-jest": "^29.1.0",
         "ts-node": "^10.9.1",
         "typescript": "~5.0.4"
+    },
+    "dependencies": {
+        "csv-writer": "^1.6.0",
+        "fs": "^0.0.1-security"
     }
 }
